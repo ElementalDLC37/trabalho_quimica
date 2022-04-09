@@ -1,0 +1,8 @@
+[data-anime] {
+    opacity: 0;
+    transition: 3s;
+}
+  
+[data-anime].animate {
+    opacity: 1;
+}

@@ -1,0 +1,174 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Imagem de Fundo */
+#img-principal {
+    position: absolute;
+    opacity: 20%;
+    z-index: auto;
+    animation: image-opacity 8s ease-in-out;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo */
+#cabecalho {
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    animation: image-opacity 5s ease-in-out;
+}
+
+#titulo-logo {
+    color: #02F5A0;
+    font-size: 310%;
+    line-height: 100%;
+    text-shadow:
+        0 0 7px rgba(0, 255, 170, 0.425),
+        0 0 10px rgba(0, 255, 170, 0.486),
+        0 0 21px rgba(0, 255, 170, 0.274),
+        0 0 42px rgba(0, 255, 170, 0.486),
+        0 0 82px #0fa,
+        0 0 92px rgba(0, 255, 170, 0.596),
+        0 0 102px rgba(0, 255, 170, 0.308),
+        0 0 151px #0fa;
+    animation: flicker 1.5s infinite alternate; 
+}
+
+#subtitulo-logo {
+    color: #02F5A0;
+    font-size: 160%;
+    line-height: 60%;
+    text-shadow:
+        0 0 7px rgba(0, 255, 170, 0.425),
+        0 0 10px rgba(0, 255, 170, 0.486),
+        0 0 21px rgba(0, 255, 170, 0.274),
+        0 0 42px rgba(0, 255, 170, 0.486),
+        0 0 82px #0fa,
+        0 0 92px rgba(0, 255, 170, 0.596),
+        0 0 102px rgba(0, 255, 170, 0.308),
+        0 0 151px #0fa;
+    animation: flicker 1s infinite alternate; 
+}
+
+/* Menu */
+#menu {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: image-opacity 6s ease-in-out;
+    align-items: center;
+    margin-top: 5em;
+}
+
+#lista {
+    position: relative;
+}
+
+#lista a {
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 200%; 
+    color: #02F5A0;
+    text-shadow:
+        0 0 7px rgba(0, 255, 170, 0.425),
+        0 0 10px rgba(0, 255, 170, 0.486),
+        0 0 21px rgba(0, 255, 170, 0.274),
+        0 0 42px rgba(0, 255, 170, 0.486),
+        0 0 82px #0fa,
+        0 0 92px rgba(0, 255, 170, 0.596),
+        0 0 102px rgba(0, 255, 170, 0.308),
+        0 0 151px #0fa;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    display: inline-block;
+    text-align: center;
+}
+
+#lista a:hover {
+    font-size: 280%; 
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 10px;
+    color: #02F5A0;
+    text-shadow:
+        0 0 7px rgba(0, 255, 170, 0.425),
+        0 0 10px rgba(0, 255, 170, 0.486),
+        0 0 21px rgba(0, 255, 170, 0.274),
+        0 0 42px rgba(0, 255, 170, 0.486),
+        0 0 82px #0fa,
+        0 0 92px rgba(0, 255, 170, 0.596),
+        0 0 102px rgba(0, 255, 170, 0.308),
+        0 0 151px #0fa;
+}
+
+#lista a:active {
+    font-size: 280%;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 10px;
+    color: #02F5A0;
+    text-shadow:
+        0 0 7px rgba(0, 255, 170, 0.425),
+        0 0 10px rgba(0, 255, 170, 0.486),
+        0 0 21px rgba(0, 255, 170, 0.274),
+        0 0 42px rgba(0, 255, 170, 0.486),
+        0 0 82px #0fa,
+        0 0 92px rgba(0, 255, 170, 0.596),
+        0 0 102px rgba(0, 255, 170, 0.308),
+        0 0 151px #0fa;
+}
+
+#lista a:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#lista li {
+    
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/* Animações */ 
+@keyframes image-opacity {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 20%;
+    }
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px rgba(0, 255, 170, 0.459),
+        0 0 11px rgba(0, 255, 170, 0.493),
+        0 0 19px #0fa,
+        0 0 40px rgba(0, 255, 170, 0.466),
+        0 0 80px #0fa,
+        0 0 90px rgba(0, 255, 170, 0.493),
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    20%, 24%, 55% {       
+      text-shadow: 0 0 100px #0fa,
+      0 0 150px rgba(0, 255, 170, 0.425);
+    }
+}
